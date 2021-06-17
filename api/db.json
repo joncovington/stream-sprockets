@@ -4,6 +4,12 @@
       "title": "Excellent Stream",
       "description": "Whatta great stream for your viewing pleasure!",
       "id": 1
+    },
+    {
+      "title": "Test with userId",
+      "description": "key is googleUserId",
+      "googleUserId": "108349471025201969383",
+      "id": 2
     }
   ]
 }
