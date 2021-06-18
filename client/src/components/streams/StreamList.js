@@ -13,8 +13,8 @@ class StreamList extends React.Component {
             return (
                 <div className="right floated content">
                     <div className="ui mini buttons">
-                        <button className="ui primary button">Edit</button>
-                        <button className="ui red button">Delete</button>
+                        <Link to={`/streams/edit/${stream.id}`} className="ui primary button">Edit</Link>
+                        <Link to={`/streams/delete/${stream.id}`} className="ui red button">Delete</Link>
                     </div>
                 </div>
             );
@@ -28,7 +28,7 @@ class StreamList extends React.Component {
                     {this.renderAdminButtons(stream)}
                     <i className="large middle aligned icon camera" />
                     <div className="content">
-                        {stream.title}
+                        <Link to={`/streams/${stream.id}`} className="header">{stream.title}</Link>
                         <div className="description">
                             {stream.description}
                         </div>
